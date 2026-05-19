@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AND Admin - 회원 상세</title>
+    <meta content="AND 어드민" name="description">
+    <meta content="website" property="og:type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user_detail.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="admin">
+            <header>
+                <h1 class="logo"><img src="../image/logo.png" alt=""> Admin</h1>
+                <div class="logout">
+                    <a href="" class="alertbox">
+                        <img src="../image/alert.png" alt="종아이콘">
+                        <span class="reddot"></span>
+                    </a>
+                    <div class="infobox">
+                        <p class="profile"><img src="../image/profile.png" alt="프로필이미지"></p>
+                        <a href="">
+                            <p><b>관리자</b><br/>슈퍼 관리자</p>
+                            <img src="../image/arrow-down.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="cont">
+                <div class="lnb">
+                    <div class="lnb_tit">
+                        <h2>김앤디</h2>
+                        <p class="mail">kimand@andk.ac.kr</p>
+                    </div>
+                    <ul>
+                        <li><a href=""><img src="../image/lnb01.png" alt=""> 홈</a></li>
+                        <li class="active"><a href=""><img src="../image/lnb02.png" alt=""> 회원 관리</a></li>
+                        <li><a href=""><img src="../image/lnb03.png" alt=""> 기기관리</a></li>
+                        <li><a href=""><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
+                        <li><a href=""><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
+                        <li><a href=""><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
+                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="content content_col user_detail">
+
+                    <!-- 상단 타이틀 -->
+                    <div class="flex_btw">
+                        <div class="flex gap_lg">
+                            <a href="user_list.html" class="back_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00016 12.6667L3.3335 8.00004L8.00016 3.33337" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6668 8H3.3335" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                            <div>
+                                <h3 class="adm_title">김건강</h3>
+                                <p class="adm_sub_title">회원 ID: 1</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn_blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_9_612)">
+                                    <path d="M8 2H3.33333C2.97971 2 2.64057 2.14048 2.39052 2.39052C2.14048 2.64057 2 2.97971 2 3.33333V12.6667C2 13.0203 2.14048 13.3594 2.39052 13.6095C2.64057 13.8595 2.97971 14 3.33333 14H12.6667C13.0203 14 13.3594 13.8595 13.6095 13.6095C13.8595 13.3594 14 13.0203 14 12.6667V8" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.2499 1.75003C12.5151 1.48481 12.8748 1.33582 13.2499 1.33582C13.625 1.33582 13.9847 1.48481 14.2499 1.75003C14.5151 2.01525 14.6641 2.37496 14.6641 2.75003C14.6641 3.1251 14.5151 3.48481 14.2499 3.75003L8.24123 9.75936C8.08293 9.91753 7.88737 10.0333 7.67257 10.096L5.75723 10.656C5.69987 10.6728 5.63906 10.6738 5.58117 10.6589C5.52329 10.6441 5.47045 10.614 5.4282 10.5717C5.38594 10.5295 5.35583 10.4766 5.341 10.4188C5.32617 10.3609 5.32717 10.3001 5.3439 10.2427L5.9039 8.32736C5.96692 8.11273 6.08292 7.9174 6.24123 7.75936L12.2499 1.75003Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_9_612">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                            정보 수정
+                        </a>
+                    </div>
+
+                    <!-- 기본 정보 -->
+                    <div class="boxing">
+                        <p class="section_tit">기본 정보</p>
+                        <div class="info_grid">
+                            <div class="info_item">
+                                <span class="info_icon"><img src="../image/ic_user.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">이름</p>
+                                    <p class="info_val">김건강</p>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon info_icon_green"><img src="../image/ic_cal.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">가입일</p>
+                                    <p class="info_val">2025.04.01</p>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon "><img src="../image/ic_mail.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">이메일</p>
+                                    <p class="info_val">andkorea@andk.co.kr</p>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon  info_icon_green"><img src="../image/ic_pulse.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">최근 로그인</p>
+                                    <p class="info_val">2025.04.09 14:32</p>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon"><img src="../image/ic_phone.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">전화번호</p>
+                                    <p class="info_val">010-1234-5678</p>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon info_icon_yell"><img src="../image/ic_device.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">기기 상태</p>
+                                    <div class="device_badges">
+                                        <span class="dev_badge">♡ 혈압</span>
+                                        <span class="dev_badge">♡ 체중</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <span class="info_icon"><img src="../image/ic_cal_blue.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">생년월일</p>
+                                    <p class="info_val">1991.03.15 (남, 35세)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 기기 정보 -->
+                    <div class="boxing">
+                        <p class="section_tit">기기 정보</p>
+                        <div class="device_grid">
+                            <div class="device_item">
+                                <span class="device_item_icon"><img src="../image/ic_device_bp.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">혈압</p>
+                                    <p class="info_val">AND UA-651BLE</p>
+                                </div>
+                            </div>
+                            <div class="device_item">
+                                <span class="device_item_icon"><img src="../image/ic_device_bp.png" alt=""></span>
+                                <div>
+                                    <p class="info_label">체중</p>
+                                    <p class="info_val">AND UC-352BLE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 최근 측정값 -->
+                    <div class="boxing">
+                        <p class="section_tit">최근 측정값</p>
+                        <div class="measure_grid">
+                            <div class="measure_item">
+                                <p class="info_label">최고 혈압</p>
+                                <p class="measure_num">124 <span>mmHg</span></p>
+                                <p class="info_label">2025.04.09</p>
+                            </div>
+                            <div class="measure_item">
+                                <p class="info_label">최저 혈압</p>
+                                <p class="measure_num">81 <span>mmHg</span></p>
+                                <p class="info_label">2025.04.09</p>
+                            </div>
+                            <div class="measure_item">
+                                <p class="info_label">맥박</p>
+                                <p class="measure_num">72 <span>dpm</span></p>
+                                <p class="info_label">2025.04.09</p>
+                            </div>
+                            <div class="measure_item">
+                                <p class="info_label">체중</p>
+                                <p class="measure_num">71.8 <span>kg</span></p>
+                                <p class="info_label">2025.04.09</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 차트 영역 -->
+                    <div class="chart_row">
+                        <div class="boxing chart_box">
+                            <div class="flex_btw">
+                                <a  href="" class="section_tit chart_link">혈압 
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06066 0L7.59099 6.53033L1.06066 13.0607L0 12L5.46967 6.53033L0 1.06066L1.06066 0Z" fill="#17191A"/>
+                                    </svg></span>
+                                </a>
+                                <p class="info_label">최근 일주일</p>
+                            </div>
+                            <div class="chart_area"></div>
+                        </div>
+                        <div class="boxing chart_box">
+                            <div class="flex_btw">
+                                <a href="" class="section_tit chart_link">체중 
+                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06066 0L7.59099 6.53033L1.06066 13.0607L0 12L5.46967 6.53033L0 1.06066L1.06066 0Z" fill="#17191A"/>
+                                    </svg></span>
+                                </a>
+                                <p class="info_label">최근 일주일</p>
+                            </div>
+                            <div class="chart_area"></div>
+                        </div>
+                    </div>
+                    <div class="btn_box flex_end">
+                        <button class="del_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M2 4H14" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6668 4V13.3333C12.6668 14 12.0002 14.6667 11.3335 14.6667H4.66683C4.00016 14.6667 3.3335 14 3.3335 13.3333V4" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.3335 3.99992V2.66659C5.3335 1.99992 6.00016 1.33325 6.66683 1.33325H9.3335C10.0002 1.33325 10.6668 1.99992 10.6668 2.66659V3.99992" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.6665 7.33325V11.3333" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.3335 7.33325V11.3333" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            회원 삭제
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
