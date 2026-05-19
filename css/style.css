@@ -36,6 +36,35 @@
 .admin .wfull {width: 100% !important;}
 
 
+
+
+/* =====================
+   login wrap
+   ===================== */
+.adm_login_wrap {width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f0f4f8;}
+.admin .login_form {width: 100%; max-width: 460px; display: flex; flex-direction: column; align-items: center; background: #fff; border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07); padding: 52px 40px 44px;}
+
+.admin .login_form .logo {margin: 0 0 36px;}
+.admin .login_form .logo img {display: block; height: 40px; width: auto;}
+.admin .login_box {width: 100%; display: flex; flex-direction: column; gap: 16px;}
+.admin .login_field {display: flex; flex-direction: column; gap: 6px;}
+.admin .login_field label {font-size: 0.875rem; font-weight: 500; color: #555;}
+.admin .login_field input[type="text"],
+.admin .login_field input[type="password"] {width: 100%; height: 48px; padding: 0 14px; border: 1px solid #d8dde5; border-radius: 8px; font-size: 0.9375rem; color: #353535; background: #fff; transition: border-color 0.2s;}
+.admin .login_field input[type="text"]:focus,
+.admin .login_field input[type="password"]:focus {border-color: #1a6fd8;}
+.admin .login_field input::placeholder {color: #aab0ba;}
+.admin .login_btn {width: 100%; height: 52px; margin-top: 8px; background: #1a6fd8; color: #fff; font-size: 1rem; font-weight: 600; border-radius: 8px; cursor: pointer; letter-spacing: -0.01em; transition: background 0.2s;}
+.admin .login_btn:hover, .admin .login_btn:focus {background: #155bb5;}
+
+@media (max-width: 520px) {
+    .admin .login_form {padding: 40px 24px 36px; border-radius: 12px;}
+}
+
+
+/* 
+
+
 .adm_login_wrap{width:100%; height:100vh;display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .admin .login_form {min-width: 520px;;display: flex;align-items: center;flex-direction: column;justify-content: center;box-shadow:0 0 20px rgba(0,0, 0,0.08);border-radius: 20px;padding:50px 30px;}
 .admin .login_form .login_box{width: 80%;;}
@@ -47,6 +76,9 @@
 .admin .login_form input[type="submit"]:hover, .admin .login_form input[type="submit"]:focus{background-color:#0d3a8f}
 .admin .login_form h2 {font-size: 1.6rem;text-transform: uppercase;margin:24px 0 16px;font-weight:500;color:#17479e}
 .admin .login_form p {color: #999;margin:48px 0 0;}
+ */
+
+
 
 
 
