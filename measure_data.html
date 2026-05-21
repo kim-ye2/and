@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AND Admin - 측정 데이터</title>
+    <meta content="AND 어드민" name="description">
+    <meta content="website" property="og:type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/measure_data.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="admin">
+            <header>
+                <h1 class="logo"><img src="../image/logo.png" alt=""> Admin</h1>
+                <div class="logout">
+                    <a href="" class="alertbox">
+                        <img src="../image/alert.png" alt="종아이콘">
+                        <span class="reddot"></span>
+                    </a>
+                    <div class="infobox">
+                        <p class="profile"><img src="../image/profile.png" alt="프로필이미지"></p>
+                        <a href="">
+                            <p><b>관리자</b><br/>슈퍼 관리자</p>
+                            <img src="../image/arrow-down.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="cont">
+                <div class="lnb">
+                    <div class="lnb_tit">
+                        <h2>김앤디</h2>
+                        <p class="mail">kimand@andk.ac.kr</p>
+                    </div>
+                    <ul>
+                        <li><a href="home.html"><img src="../image/lnb01.png" alt="home.html"> 홈</a></li>
+                        <li><a href="user_list.html"><img src="../image/lnb02.png" alt=""> 회원 관리</a></li>
+                        <li><a href="equip_list.html"><img src="../image/lnb03.png" alt=""> 기기관리</a></li>
+                        <li class="active"><a href="measure_data.html"><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
+                        <li><a href="content_list.html"><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
+                        <li><a href=""><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
+                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="content content_col measure_data">
+
+                    <div>
+                        <h3 class="adm_title">회원별 측정 데이터</h3>
+                        <p class="adm_sub_title">전체 9명 (측정 8명)</p>
+                    </div>
+
+                    <!-- 측정 유형 탭 -->
+                    <div class="msr_tab_bar">
+                        <a href="" class="msr_tab active">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M14.25 10.5C15.3675 9.405 16.5 8.0925 16.5 6.375C16.5 5.28098 16.0654 4.23177 15.2918 3.45818C14.5182 2.6846 13.469 2.25 12.375 2.25C11.055 2.25 10.125 2.625 9 3.75C7.875 2.625 6.945 2.25 5.625 2.25C4.53098 2.25 3.48177 2.6846 2.70818 3.45818C1.9346 4.23177 1.5 5.28098 1.5 6.375C1.5 8.1 2.625 9.4125 3.75 10.5L9 15.75L14.25 10.5Z" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            혈압
+                        </a>
+                        <a href="" class="msr_tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 6C10.2426 6 11.25 4.99264 11.25 3.75C11.25 2.50736 10.2426 1.5 9 1.5C7.75736 1.5 6.75 2.50736 6.75 3.75C6.75 4.99264 7.75736 6 9 6Z" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.87498 6C4.55042 6.00337 4.23571 6.11192 3.97809 6.30936C3.72047 6.5068 3.53385 6.78247 3.44623 7.095L1.57498 13.875C1.51828 14.0944 1.51204 14.3239 1.55674 14.5461C1.60144 14.7683 1.6959 14.9774 1.83304 15.1579C1.97018 15.3383 2.14642 15.4853 2.34854 15.5879C2.55065 15.6905 2.77337 15.7459 2.99998 15.75H15C15.2315 15.7499 15.4598 15.6962 15.6671 15.5932C15.8744 15.4902 16.0551 15.3405 16.1949 15.156C16.3347 14.9715 16.43 14.7571 16.4731 14.5297C16.5163 14.3023 16.5062 14.0679 16.4437 13.845L14.55 7.125C14.4674 6.80506 14.2815 6.52134 14.0211 6.31791C13.7607 6.11448 13.4404 6.00273 13.11 6H4.87498Z" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            체중
+                        </a>
+                        <a href="" class="msr_tab msr_tab_disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M9 2.25C8.1049 3.14511 7.60203 4.35913 7.60203 5.625C7.60203 6.89087 8.1049 8.10489 9 9C9.89511 9.89511 11.1091 10.398 12.375 10.398C13.6409 10.398 14.8549 9.89511 15.75 9C15.75 10.335 15.3541 11.6401 14.6124 12.7501C13.8707 13.8601 12.8165 14.7253 11.5831 15.2362C10.3497 15.7471 8.99252 15.8808 7.68314 15.6203C6.37377 15.3599 5.17104 14.717 4.22703 13.773C3.28303 12.829 2.64015 11.6262 2.3797 10.3169C2.11925 9.00749 2.25292 7.65029 2.76382 6.41689C3.27471 5.18349 4.13987 4.12928 5.2499 3.38758C6.35994 2.64588 7.66498 2.25 9 2.25Z" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            수면 <span class="msr_ready">(준비중)</span>
+                        </a>
+                        <a href="" class="msr_tab msr_tab_disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M10.5 3V10.905C11.0719 11.2352 11.5189 11.7449 11.7716 12.355C12.0244 12.9652 12.0687 13.6416 11.8978 14.2795C11.7269 14.9174 11.3502 15.4811 10.8263 15.8831C10.3024 16.2852 9.6604 16.5031 9 16.5031C8.3396 16.5031 7.69765 16.2852 7.17372 15.8831C6.64978 15.4811 6.27315 14.9174 6.10222 14.2795C5.9313 13.6416 5.97564 12.9652 6.22836 12.355C6.48109 11.7449 6.92808 11.2352 7.5 10.905V3C7.5 2.60218 7.65804 2.22064 7.93934 1.93934C8.22065 1.65804 8.60218 1.5 9 1.5C9.39783 1.5 9.77936 1.65804 10.0607 1.93934C10.342 2.22064 10.5 2.60218 10.5 3Z" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            체온 <span class="msr_ready">(준비중)</span>
+                        </a>
+                    </div>
+
+                    <!-- 요약 카드 -->
+                    <div class="msr_summary">
+                        <div class="msr_card">
+                            <p class="msr_card_label">총 측정 횟수</p>
+                            <div class="msr_card_top">
+                                <p class="msr_card_num">359회</p>
+                                <span class="msr_card_icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M18.3334 9.99984H16.2667C15.9025 9.99906 15.5481 10.1176 15.2576 10.3373C14.9672 10.557 14.7567 10.8658 14.6584 11.2165L12.7 18.1832C12.6874 18.2264 12.6611 18.2645 12.625 18.2915C12.589 18.3186 12.5451 18.3332 12.5 18.3332C12.4549 18.3332 12.4111 18.3186 12.375 18.2915C12.339 18.2645 12.3126 18.2264 12.3 18.1832L7.70002 1.8165C7.6874 1.77323 7.66108 1.73522 7.62502 1.70817C7.58896 1.68112 7.5451 1.6665 7.50002 1.6665C7.45494 1.6665 7.41108 1.68112 7.37502 1.70817C7.33896 1.73522 7.31264 1.77323 7.30002 1.8165L5.34169 8.78317C5.24374 9.13247 5.0345 9.44027 4.74574 9.65985C4.45698 9.87943 4.10445 9.9988 3.74169 9.99984H1.66669" stroke="#1976D2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="msr_card">
+                            <p class="msr_card_label">최적 상태</p>
+                            <div class="msr_card_top">
+                                <p class="msr_card_num green">3명</p>
+                                <span class="msr_card_icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M18.3333 14.1668L11.25 7.0835L7.08329 11.2502L1.66663 5.8335" stroke="#10B981" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.3334 14.1665H18.3334V9.1665" stroke="#10B981" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="msr_card">
+                            <p class="msr_card_label">주의 필요</p>
+                            <div class="msr_card_top">
+                                <p class="msr_card_num yellow">1명</p>
+                                <span class="msr_card_icon">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M18.3333 9.99984H16.2666C15.9024 9.99906 15.548 10.1176 15.2576 10.3373C14.9671 10.557 14.7566 10.8658 14.6583 11.2165L12.7 18.1832C12.6873 18.2264 12.661 18.2645 12.625 18.2915C12.5889 18.3186 12.545 18.3332 12.5 18.3332C12.4549 18.3332 12.411 18.3186 12.375 18.2915C12.3389 18.2645 12.3126 18.2264 12.3 18.1832L7.69996 1.8165C7.68734 1.77323 7.66102 1.73522 7.62496 1.70817C7.5889 1.68112 7.54504 1.6665 7.49996 1.6665C7.45488 1.6665 7.41102 1.68112 7.37496 1.70817C7.3389 1.73522 7.31258 1.77323 7.29996 1.8165L5.34163 8.78317C5.24368 9.13247 5.03444 9.44027 4.74568 9.65985C4.45691 9.87943 4.10439 9.9988 3.74163 9.99984H1.66663" stroke="#F59E0B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="msr_card">
+                            <p class="msr_card_label">경고 상태</p>
+                            <div class="msr_card_top">
+                                <p class="msr_card_num red">1명</p>
+                                <span class="msr_card_icon red">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M18.3333 5.8335L11.25 12.9168L7.08329 8.75016L1.66663 14.1668" stroke="#EF4444" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.3334 5.8335H18.3334V10.8335" stroke="#EF4444" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 검색 + 필터 -->
+                    <div class="search">
+                        <div class="search_input wfull">
+                            <input type="text" class="gray scope wfull" placeholder="이름, 이메일로 검색">
+                            <select class="gray">
+                                <option value="">전체 상태</option>
+                                <option value="">정상</option>
+                                <option value="">주의</option>
+                                <option value="">경고</option>
+                                <option value="">측정없음</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 테이블 -->
+                    <div class="boxing">
+                        <div class="table_wrap">
+                            <table class="table_b">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>이름</th>
+                                        <th>이메일</th>
+                                        <th>전화번호</th>
+                                        <th>최근 측정일</th>
+                                        <th>총 측정 횟수</th>
+                                        <th>최고혈압(mmHg)</th>
+                                        <th>최저혈압(mmHg)</th>
+                                        <th>맥박(dmg)</th>
+                                        <th>상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>2025.04.01</td>
+                                        <td><b>47회</b></td>
+                                        <td><b>123</b></td>
+                                        <td><b>84</b></td>
+                                        <td><b>72</b></td>
+                                        <td><span class="badge blue">정상</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td><a href="user_detail.html"><b>김건강</b></a></td>
+                                        <td>andkorea@andk.co.kr</td>
+                                        <td>010-1234-5678</td>
+                                        <td>-</td>
+                                        <td><b>0회</b></td>
+                                        <td><b>-</b></td>
+                                        <td><b>-</b></td>
+                                        <td><b>-</b></td>
+                                        <td><span class="badge outline">측정없음</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

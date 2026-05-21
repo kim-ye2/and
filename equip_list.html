@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AND Admin - 기기 목록</title>
+    <meta content="AND 어드민" name="description">
+    <meta content="website" property="og:type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/equip_list.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="admin">
+            <header>
+                <h1 class="logo"><img src="../image/logo.png" alt=""> Admin</h1>
+                <div class="logout">
+                    <a href="" class="alertbox">
+                        <img src="../image/alert.png" alt="종아이콘">
+                        <span class="reddot"></span>
+                    </a>
+                    <div class="infobox">
+                        <p class="profile"><img src="../image/profile.png" alt="프로필이미지"></p>
+                        <a href="">
+                            <p><b>관리자</b><br/>슈퍼 관리자</p>
+                            <img src="../image/arrow-down.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="cont">
+                <div class="lnb">
+                    <div class="lnb_tit">
+                        <h2>김앤디</h2>
+                        <p class="mail">kimand@andk.ac.kr</p>
+                    </div>
+                    <ul>
+                        <li><a href="home.html"><img src="../image/lnb01.png" alt="home.html"> 홈</a></li>
+                        <li><a href="user_list.html"><img src="../image/lnb02.png" alt=""> 회원 관리</a></li>
+                        <li class="active"><a href="equip_list.html"><img src="../image/lnb03.png" alt=""> 기기관리</a></li>
+                        <li><a href="measure_data.html"><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
+                        <li><a href="content_list.html"><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
+                        <li><a href=""><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
+                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="content content_col equip_list">
+
+                    <div>
+                        <h3 class="adm_title">기기 목록</h3>
+                        <p class="adm_sub_title">전체 4개</p>
+                    </div>
+
+                    <div class="boxing">
+                        <!-- 탭 -->
+                        <div class="tab_wrap">
+                            <ul class="tab_bar">
+                                <li class="tab_item active" data-tab="bp"><a href="#">혈압</a></li>
+                                <li class="tab_item" data-tab="weight"><a href="#">체중</a></li>
+                                <li class="tab_item" data-tab="sugar"><a href="#">혈당</a></li>
+                                <li class="tab_item" data-tab="temp"><a href="#">체온</a></li>
+                                <li class="tab_item" data-tab="sleep"><a href="#">수면</a></li>
+                            </ul>
+
+                            <!-- 혈압 -->
+                            <div class="tab_cont" id="tab_bp">
+                                <div class="equip_top">
+                                    <div class="search_box">
+                                        <input type="text" class="gray scope" placeholder="모델명 또는 시리얼 번호 검색">
+                                    </div>
+                                    <a href="" class="btn_blue" onclick="modalOpen('equip_add'); return false;">+ 추가</a>
+                                </div>
+                                <ul class="equip_list_ul">
+                                    <li>
+                                        <a href="" onclick="modalOpen('equip_modify'); return false;">
+                                            <span class="equip_img"><img src="../image/equip_sample.png" alt=""></span>
+                                            <div class="equip_info">
+                                                <p class="equip_name">UA-1100NFC</p>
+                                                <p class="equip_serial">AND2025040100123</p>
+                                                <p class="equip_conn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 10H6.005" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M1 4.41007C2.37506 3.18019 4.15517 2.50024 6 2.50024C7.84483 2.50024 9.62494 3.18019 11 4.41007" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2.5 6.42953C3.43464 5.5134 4.69124 5.00024 6 5.00024C7.30876 5.00024 8.56536 5.5134 9.5 6.42953" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.25 8.2144C4.71732 7.75633 5.34562 7.49976 6 7.49976C6.65438 7.49976 7.28268 7.75633 7.75 8.2144" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    연결됨
+                                                </p>
+                                            </div>
+                                            <svg class="arrow_ic" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06066 0L7.59099 6.53033L1.06066 13.0607L0 12L5.46967 6.53033L0 1.06066L1.06066 0Z" fill="#A4ADB2"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="equip_img"><img src="../image/equip_sample.png" alt=""></span>
+                                            <div class="equip_info">
+                                                <p class="equip_name">UA-651/656BLE</p>
+                                                <p class="equip_serial">AND2025040100123</p>
+                                                <p class="equip_conn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 10H6.005" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M1 4.41007C2.37506 3.18019 4.15517 2.50024 6 2.50024C7.84483 2.50024 9.62494 3.18019 11 4.41007" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2.5 6.42953C3.43464 5.5134 4.69124 5.00024 6 5.00024C7.30876 5.00024 8.56536 5.5134 9.5 6.42953" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.25 8.2144C4.71732 7.75633 5.34562 7.49976 6 7.49976C6.65438 7.49976 7.28268 7.75633 7.75 8.2144" stroke="#1976D2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    연결됨
+                                                </p>
+                                            </div>
+                                            <svg class="arrow_ic" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06066 0L7.59099 6.53033L1.06066 13.0607L0 12L5.46967 6.53033L0 1.06066L1.06066 0Z" fill="#A4ADB2"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 체중 -->
+                            <div class="tab_cont" id="tab_weight" style="display:none;">
+                                <p class="no_data">- 기기 없음 -</p>
+                            </div>
+
+                            <!-- 혈당 -->
+                            <div class="tab_cont" id="tab_sugar" style="display:none;">
+                                <p class="no_data">- 기기 없음 -</p>
+                            </div>
+
+                            <!-- 체온 -->
+                            <div class="tab_cont" id="tab_temp" style="display:none;">
+                                <p class="no_data">- 기기 없음 -</p>
+                            </div>
+
+                            <!-- 수면 -->
+                            <div class="tab_cont" id="tab_sleep" style="display:none;">
+                                <p class="no_data">- 기기 없음 -</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- 기기 정보 수정 모달 // s -->
+            <div class="modal_wrap" id="equip_modify">
+                <div class="modal reg_modal">
+                    <button class="modal_close" onclick="document.getElementById('equip_modify').style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 4L12 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <h3 class="adm_title">기기 정보 수정</h3>
+                    </div>
+                    <div>
+                        <p class="reg_label">기기 이미지 <span class="req">*</span></p>
+                        <div class="equip_img_upload">
+                            <div class="equip_thumb">
+                                <img src="../image/equip_sample.png" alt="기기이미지">
+                            </div>
+                            <div class="equip_img_right">
+                                <button type="button" class="btn_line equip_img_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.3334 5.33333L8.00008 2L4.66675 5.33333" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V10" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    이미지 변경
+                                </button>
+                                <p class="reg_guide">JPG, PNG 파일 (최대 5MB)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="reg_label">카테고리 <span class="req">*</span></p>
+                        <select class="wfull">
+                            <option>혈압</option>
+                            <option>체중</option>
+                            <option>혈당</option>
+                            <option>체온</option>
+                            <option>수면</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="reg_label">모델명 <span class="req">*</span></p>
+                        <input type="text" class="wfull" value="UA-1100NFC">
+                    </div>
+                    <div>
+                        <p class="reg_label">시리얼 번호</p>
+                        <input type="text" class="wfull" value="AND2025040100123" disabled>
+                        <p class="reg_guide">시리얼 번호는 변경할 수 없습니다</p>
+                    </div>
+                    <div class="modal_btn_wrap">
+                    </div>
+                    <div class="modal_btn_wrap modal_btn_wrap_col">
+                        <button class="equip_save_btn">저장하기</button>
+                        <button class="equip_del_btn">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M2 4H14" stroke="#FF5100" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6666 4V13.3333C12.6666 14 11.9999 14.6667 11.3333 14.6667H4.66659C3.99992 14.6667 3.33325 14 3.33325 13.3333V4" stroke="#FF5100" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33325 3.99992V2.66659C5.33325 1.99992 5.99992 1.33325 6.66659 1.33325H9.33325C9.99992 1.33325 10.6666 1.99992 10.6666 2.66659V3.99992" stroke="#FF5100" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66675 7.33325V11.3333" stroke="#FF5100" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.33325 7.33325V11.3333" stroke="#FF5100" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            기기 삭제
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- 기기 정보 수정 모달 // e -->
+
+
+            <!-- 새 기기 추가 모달 // s -->
+            <div class="modal_wrap" id="equip_add">
+                <div class="modal reg_modal">
+                    <button class="modal_close" onclick="document.getElementById('equip_add').style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 4L12 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <h3 class="adm_title">새 기기 추가</h3>
+                    </div>
+                    <div>
+                        <p class="reg_label">기기 이미지 <span class="req">*</span></p>
+                        <div class="equip_img_upload">
+                            <div class="equip_thumb equip_thumb_empty">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M28 20V25.3333C28 26.0406 27.719 26.7189 27.219 27.219C26.7189 27.719 26.0406 28 25.3333 28H6.66667C5.95942 28 5.28115 27.719 4.78105 27.219C4.28095 26.7189 4 26.0406 4 25.3333V20" stroke="#717182" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.6668 10.6667L16.0002 4L9.3335 10.6667" stroke="#717182" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 4V20" stroke="#717182" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </div>
+                            <div class="equip_img_right">
+                                <button type="button" class="btn_line equip_img_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.3334 5.33333L8.00008 2L4.66675 5.33333" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V10" stroke="#030213" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    이미지 선택
+                                </button>
+                                <p class="reg_guide">JPG, PNG 파일 (최대 5MB)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="reg_label">카테고리 <span class="req">*</span></p>
+                        <select class="wfull">
+                            <option>혈압</option>
+                            <option>체중</option>
+                            <option>혈당</option>
+                            <option>체온</option>
+                            <option>수면</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="reg_label">모델명 <span class="req">*</span></p>
+                        <input type="text" class="wfull" value="AND UA-651BLE">
+                    </div>
+                    <div>
+                        <p class="reg_label">시리얼 번호 <span class="req">*</span></p>
+                        <input type="text" class="wfull" value="AND2025040100123">
+                        <p class="reg_guide equip_error_msg">기기 및 시리얼 번호를 정확히 입력하세요</p>
+                    </div>
+                    <div class="modal_btn_wrap">
+                        <button class="btn_line" onclick="document.getElementById('equip_add').style.display='none'">취소</button>
+                        <button class="equip_save_btn">추가하기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 새 기기 추가 모달 // e -->
+
+
+        </div>
+    </div>
+
+    <script>
+        $('.tab_item a').on('click', function(e) {
+            e.preventDefault();
+            var $li = $(this).closest('.tab_item');
+            var tab = $li.data('tab');
+            $('.tab_item').removeClass('active');
+            $li.addClass('active');
+            $('.tab_cont').hide();
+            $('#tab_' + tab).show();
+        });
+
+        function modalOpen(id) {
+            document.querySelectorAll('.modal_wrap').forEach(m => m.style.display = 'none');
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        document.querySelectorAll('.modal_wrap').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target.classList.contains('modal_wrap')) {
+                    this.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
