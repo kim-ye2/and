@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AND Admin - 콘텐츠 상세</title>
+    <meta content="AND 어드민" name="description">
+    <meta content="website" property="og:type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content_view.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="admin">
+            <header>
+                <h1 class="logo"><img src="../image/logo.png" alt=""> Admin</h1>
+                <div class="logout">
+                    <a href="" class="alertbox">
+                        <img src="../image/alert.png" alt="종아이콘">
+                        <span class="reddot"></span>
+                    </a>
+                    <div class="infobox">
+                        <p class="profile"><img src="../image/profile.png" alt="프로필이미지"></p>
+                        <a href="">
+                            <p><b>관리자</b><br/>슈퍼 관리자</p>
+                            <img src="../image/arrow-down.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="cont">
+                <div class="lnb">
+                    <div class="lnb_tit">
+                        <h2>김앤디</h2>
+                        <p class="mail">kimand@andk.ac.kr</p>
+                    </div>
+                    <ul>
+                        <li><a href="home.html"><img src="../image/lnb01.png" alt=""> 홈</a></li>
+                        <li><a href="user_list.html"><img src="../image/lnb02.png" alt=""> 회원 관리</a></li>
+                        <li><a href="equip_list.html"><img src="../image/lnb03.png" alt=""> 기기관리</a></li>
+                        <li><a href="measure_data.html"><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
+                        <li class="active"><a href="content_list.html"><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
+                        <li><a href=""><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
+                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="content content_col content_view bg_gray">
+
+                    <!-- 상단 타이틀 -->
+                    <div class="flex_btw gray_head">
+                        <div class="flex gap_lg">
+                            <a href="content_list.html" class="back_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00016 12.6667L3.3335 8.00004L8.00016 3.33337" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6668 8H3.3335" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <div>
+                                <h3 class="adm_title">저염식 실천하기</h3>
+                                <p class="adm_sub_title">콘텐츠 ID: 1</p>
+                            </div>
+                        </div>
+                        <div class="flex" style="gap:8px;">
+                            <a href="" class="btn_line">
+                                <img src="image/del_Icon.svg" alt="">
+                                콘텐츠 삭제
+                            </a>
+                            <a href="content_insert.html" class="btn_blue">
+                                <img src="image/modify_Icon.svg" alt="">
+                                수정하기
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 본문 boxing -->
+                    <div class="cv_wrap">
+
+                        <!-- 썸네일 -->
+                        <div class="cv_thumb">
+                            <img src="../image/test01.png" alt="저염식 실천하기">
+                        </div>
+
+                        
+                        <!-- 태그 + 메타 -->
+                        <div class="cv_meta">
+                            <div class="flex" style="gap:6px;">
+                                <span class="cv_tag topic">식단</span>
+                                <span class="cv_tag status">게시됨</span>
+                            </div>
+
+                            <div class="cv_info">
+                                <span>
+                                    <img src="image/views_icon.svg" alt="">
+                                    1,542
+                                </span>
+                                <span>
+                                    <img src="image/calendar_icon.svg" alt="">
+                                    2025.04.08
+                                </span>
+                                <span>
+                                   <img src="image/man_Icon.svg" alt="">
+                                    김건강
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="boxing">
+                        <!-- 제목 + 요약 -->
+                         <div class="tit_box">
+                            <h2 class="cv_title">저염식 실천하기</h2>
+                            <p class="cv_desc">건강한 혈압 관리를 위한 실전 가능한 생활습관 가이드입니다. 일상에서 쉽게 실천할 수 있는 방법들을 소개합니다.</p>
+                        </div>
+
+                        <!-- 섹션 1 -->
+                        <div class="cv_section">
+                            <h3 class="cv_sec_title">1단계 고혈압이란?</h3>
+                            <p class="cv_sec_body">1단계 고혈압은 일반적으로 수축기 혈압이 140~159mmHg이거나 이완기 혈압이 90~99mmHg 범위에 해당하는 경우입니다.</p>
+                        </div>
+
+                        <!-- 섹션 2 -->
+                        <div class="cv_section">
+                            <h3 class="cv_sec_title">예방 및 치료를 위한 습관</h3>
+                            <p class="cv_sec_body">고혈압은 특별한 증상이 없기 때문에 직접 혈압을 측정하지 않는 한 혈압이 높다는 사실을 모르고 지내는 경우가 대부분입니다.<br>하지만 고혈압이 올 경우 생명을 위협할 수 있는 뇌졸중, 심근경색 등의 질환의 원인이 될 수 있기에 평소 혈압 측정과 정기적인 건강검진으로 관리해야 합니다.</p>
+                        </div>
+
+                        <!-- 섹션 3 (이미지 포함) -->
+                        <div class="cv_section">
+                            <h3 class="cv_sec_title">고혈압으로 인한 합병증</h3>
+                            <p class="cv_sec_sub">1. 심장 손상</p>
+                            <div class="cv_img">
+                                <img src="../image/test02.png" alt="심장 손상">
+                            </div>
+                            <p class="cv_sec_body">고혈압은 특별한 증상이 없기 때문에 직접 혈압을 측정하지 않는 한 혈압이 높다는 사실을 모르고 지내는 경우가 대부분입니다.<br>하지만 고혈압이 올 경우 생명을 위협할 수 있는 뇌졸중, 심근경색 등의 질환의 원인이 될 수 있기에 평소 혈압 측정과 정기적인 건강검진으로 관리해야 합니다.</p>
+                            <p class="cv_sec_sub">2. 신경계통 손상</p>
+                            <div class="cv_img">
+                                <img src="../image/test03.png" alt="신경계통 손상">
+                            </div>
+                            <p class="cv_sec_body">고혈압은 특별한 증상이 없기 때문에 직접 혈압을 측정하지 않는 한 혈압이 높다는 사실을 모르고 지내는 경우가 대부분입니다.<br>하지만 고혈압이 올 경우 생명을 위협할 수 있는 뇌졸중, 심근경색 등의 질환의 원인이 될 수 있기에 평소 혈압 측정과 정기적인 건강검진으로 관리해야 합니다.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

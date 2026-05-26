@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AND Admin - 새 콘텐츠 등록</title>
+    <meta content="AND 어드민" name="description">
+    <meta content="website" property="og:type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content_reg.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="admin">
+            <header>
+                <h1 class="logo"><img src="../image/logo.png" alt=""> Admin</h1>
+                <div class="logout">
+                    <a href="" class="alertbox">
+                        <img src="../image/alert.png" alt="종아이콘">
+                        <span class="reddot"></span>
+                    </a>
+                    <div class="infobox">
+                        <p class="profile"><img src="../image/profile.png" alt="프로필이미지"></p>
+                        <a href="">
+                            <p><b>관리자</b><br/>슈퍼 관리자</p>
+                            <img src="../image/arrow-down.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="cont">
+                <div class="lnb">
+                    <div class="lnb_tit">
+                        <h2>김앤디</h2>
+                        <p class="mail">kimand@andk.ac.kr</p>
+                    </div>
+                    <ul>
+                        <li><a href="home.html"><img src="../image/lnb01.png" alt=""> 홈</a></li>
+                        <li><a href="user_list.html"><img src="../image/lnb02.png" alt=""> 회원 관리</a></li>
+                        <li><a href="equip_list.html"><img src="../image/lnb03.png" alt=""> 기기관리</a></li>
+                        <li><a href="measure_data.html"><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
+                        <li class="active"><a href="content_list.html"><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
+                        <li><a href=""><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
+                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="content content_col content_reg bg_gray">
+
+                    <!-- 상단 타이틀 -->
+                    <div class="flex_btw gray_head">
+                        <div class="flex gap_lg">
+                            <a href="content_list.html" class="back_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00016 12.6667L3.3335 8.00004L8.00016 3.33337" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6668 8H3.3335" stroke="#717182" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <h3 class="adm_title">새 콘텐츠 등록</h3>
+                        </div>
+                        <div class="flex" style="gap:8px;">
+                            <a href="content_list.html" class="btn_line">취소</a>
+                            <a href="" class="btn_blue">
+                                <img src="image/save_Icon_w.svg" alt="">
+                                저장하기
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="inser_wrap">
+                    <!-- 기본 정보 -->
+                    <div class="boxing boxing_shadow">
+                        <p class="section_tit">기본 정보</p>
+
+                        <!-- 썸네일 이미지 -->
+                        <div class="reg_field">
+                            <label>썸네일 이미지 <span class="req">*</span></label>
+                            <div class="reg_thumb_wrap">
+                                <div class="reg_thumb">
+                                    <img src="image/thumb_none.png">
+                                </div>
+                                <div class="flex_col">
+                                    <label class="btn_line reg_img_btn" for="thumb_file">
+                                        <img src="image/save_Icon.svg" alt="">
+                                        이미지 선택
+                                    </label>
+                                    <input type="file" id="thumb_file" accept="image/jpeg,image/png" style="display:none;">
+                                    <p class="reg_guide">JPG, PNG 파일 (권장: 1200×600px)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 제목 -->
+                        <div class="reg_field">
+                            <label>제목 <span class="req">*</span></label>
+                            <input type="text" class="wfull" placeholder="콘텐츠 제목을 입력하세요">
+                        </div>
+
+                        <!-- 설명(요약) -->
+                        <div class="reg_field">
+                            <label>설명 (요약) <span class="req">*</span></label>
+                            <input type="text" class="wfull" placeholder="콘텐츠 요약 설명을 입력하세요">
+                        </div>
+
+                        <!-- 주제 / 카테고리 / 작성자 -->
+                        <div class="reg_row3">
+                            <div class="reg_field">
+                                <label>주제 <span class="req">*</span></label>
+                                <select class="wfull">
+                                    <option>식단</option>
+                                    <option>운동</option>
+                                    <option>생활습관</option>
+                                </select>
+                            </div>
+                            <div class="reg_field">
+                                <label>카테고리 <span class="req">*</span></label>
+                                <select class="wfull">
+                                    <option>혈압</option>
+                                    <option>체중</option>
+                                    <option>혈당</option>
+                                </select>
+                            </div>
+                            <div class="reg_field">
+                                <label>작성자 <span class="req">*</span></label>
+                                <input type="text" class="wfull" value="김건강" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 본문 섹션 -->
+                    <div class="boxing boxing_shadow">
+                        <div class="flex_btw" style="margin-bottom:16px;">
+                            <p class="section_tit" style="margin:0;">본문 섹션</p>
+                            <button type="button" class="btn_blue">+ 섹션 추가</button>
+                        </div>
+
+                        <!-- 섹션 1 -->
+                        <div class="reg_section">
+                            <div class="flex_btw reg_section_head">
+                                <p class="reg_section_tit">섹션 1</p>
+                                <button type="button" class="reg_del_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M2 4H14" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.6666 4V13.3333C12.6666 14 11.9999 14.6667 11.3333 14.6667H4.66659C3.99992 14.6667 3.33325 14 3.33325 13.3333V4" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.33325 4.00016V2.66683C5.33325 2.00016 5.99992 1.3335 6.66659 1.3335H9.33325C9.99992 1.3335 10.6666 2.00016 10.6666 2.66683V4.00016" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66675 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.33325 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+
+                            <!-- 섹션 제목 -->
+                            <div class="reg_field">
+                                <label>섹션 제목 <span class="req">*</span></label>
+                                <input type="text" class="wfull" placeholder="제목을 입력하세요">
+                            </div>
+
+                            <!-- 섹션 이미지 -->
+                            <div class="reg_field">
+                                <label>섹션 이미지</label>
+                                <div class="reg_thumb_wrap">
+                                    <div class="reg_thumb reg_thumb_sm">
+                                      <img src="image/thumb_none.png">
+                                    </div>
+                                    <label class="btn_line reg_img_btn" for="section_file">
+                                        <img src="image/save_Icon.svg" alt="">
+                                        이미지 변경
+                                    </label>
+                                    <input type="file" id="section_file" accept="image/jpeg,image/png" style="display:none;">
+                                </div>
+                            </div>
+
+                            <!-- 단락 -->
+                            <div class="reg_field">
+                                <div class="flex_btw" style="margin-bottom:10px;">
+                                    <label style="margin:0;">단락 <span class="req">*</span></label>
+                                    <button type="button" class="btn_green">+ 단락 추가</button>
+                                </div>
+                                <div class="reg_para_wrap">
+                                    <!-- 단락 1 -->
+                                    <div class="reg_para">
+                                        <div class="flex_btw reg_para_head">
+                                            <span>단락 1</span>
+                                            <div class="flex" style="gap:6px;">
+                                                <select class="gray">
+                                                    <option>소제목</option>
+                                                    <option>본문</option>
+                                                    <option>인용</option>
+                                                </select>
+                                                <button type="button" class="reg_del_btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M2 4H14" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12.6666 4V13.3333C12.6666 14 11.9999 14.6667 11.3333 14.6667H4.66659C3.99992 14.6667 3.33325 14 3.33325 13.3333V4" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.33325 4.00016V2.66683C5.33325 2.00016 5.99992 1.3335 6.66659 1.3335H9.33325C9.99992 1.3335 10.6666 2.00016 10.6666 2.66683V4.00016" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66675 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.33325 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <textarea class="wfull gray" placeholder="소제목을 입력하세요"></textarea>
+                                    </div>
+
+                                    <!-- 단락 2 -->
+                                    <div class="reg_para">
+                                        <div class="flex_btw reg_para_head">
+                                            <span>단락 2</span>
+                                            <div class="flex" style="gap:6px;">
+                                                <select class="gray">
+                                                    <option>본문</option>
+                                                    <option>소제목</option>
+                                                    <option>인용</option>
+                                                </select>
+                                                <button type="button" class="reg_del_btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M2 4H14" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12.6666 4V13.3333C12.6666 14 11.9999 14.6667 11.3333 14.6667H4.66659C3.99992 14.6667 3.33325 14 3.33325 13.3333V4" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.33325 4.00016V2.66683C5.33325 2.00016 5.99992 1.3335 6.66659 1.3335H9.33325C9.99992 1.3335 10.6666 2.00016 10.6666 2.66683V4.00016" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.66675 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.33325 7.3335V11.3335" stroke="#EF4444" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <textarea class="wfull gray" placeholder="단락 내용을 입력하세요"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
