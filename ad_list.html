@@ -49,7 +49,7 @@
                         <li><a href="measure_data.html"><img src="../image/lnb04.png" alt=""> 측정 데이터</a></li>
                         <li><a href="content_list.html"><img src="../image/lnb05.png" alt=""> 콘텐츠 관리</a></li>
                         <li class="active"><a href="ad_list.html"><img src="../image/lnb06.png" alt=""> 광고 관리</a></li>
-                        <li><a href=""><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
+                        <li><a href="notice.html"><img src="../image/lnb07.png" alt=""> 공지사항</a></li>
                     </ul>
                 </div>
                 <div class="content content_col ad_list">
@@ -59,7 +59,7 @@
                             <h3 class="adm_title">광고 목록</h3>
                             <p class="adm_sub_title">전체 6개의 광고</p>
                         </div>
-                        <a href="ad_insert.html" class="btn_blue">
+                        <a href="" class="btn_blue" onclick="modalOpen('reg_ad'); return false;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M3.33337 8H12.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M8 3.33337V12.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,47 +108,47 @@
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td><span class="ad_thumb"><img src="../image/add_test.jpg" alt="배너"></span></td>
-                                        <td class="tal">건강검진 프로모션</td>
+                                        <td class="tal"><a href="" class="bold_btn">건강검진 프로모션</a></td>
                                         <td>홈</td>
                                         <td class="ad_period">2025.04.01<br>~ 2025.04.30</td>
                                         <td><span class="ad_badge ongoing">진행중</span></td>
-                                        <td><a class="more_btn" href="ad_view.html"><img src="../image/dot3.png" alt="관리"></a></td>
+                                        <td><a class="more_btn" href=""><img src="../image/dot3.png" alt="관리"></a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td><span class="ad_thumb"><img src="../image/add_test.jpg" alt="배너"></span></td>
-                                        <td class="tal">건강검진 프로모션</td>
+                                        <td class="tal"><a href="" class="bold_btn">건강검진 프로모션</a></td>
                                         <td class="ad_loc_link">건강 콘텐츠</td>
                                         <td class="ad_period">2025.04.01<br>~ 2025.04.30</td>
                                         <td><span class="ad_badge ongoing">진행중</span></td>
-                                        <td><a class="more_btn" href="ad_view.html"><img src="../image/dot3.png" alt="관리"></a></td>
+                                        <td><a class="more_btn" href=""><img src="../image/dot3.png" alt="관리"></a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td><span class="ad_thumb"><img src="../image/add_test.jpg" alt="배너"></span></td>
-                                        <td class="tal">건강검진 프로모션</td>
+                                        <td class="tal"><a href="" class="bold_btn">건강검진 프로모션</a></td>
                                         <td>홈</td>
                                         <td class="ad_period">2025.04.01<br>~ 2025.04.30</td>
                                         <td><span class="ad_badge end">종료</span></td>
-                                        <td><a class="more_btn" href="ad_view.html"><img src="../image/dot3.png" alt="관리"></a></td>
+                                        <td><a class="more_btn" href=""><img src="../image/dot3.png" alt="관리"></a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td><span class="ad_thumb"><img src="../image/add_test.jpg" alt="배너"></span></td>
-                                        <td class="tal">건강검진 프로모션</td>
+                                        <td class="tal"><a href="" class="bold_btn">건강검진 프로모션</a></td>
                                         <td>홈</td>
                                         <td class="ad_period">2025.04.01<br>~ 2025.04.30</td>
                                         <td><span class="ad_badge ongoing">진행중</span></td>
-                                        <td><a class="more_btn" href="ad_view.html"><img src="../image/dot3.png" alt="관리"></a></td>
+                                        <td><a class="more_btn" href=""><img src="../image/dot3.png" alt="관리"></a></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td><span class="ad_thumb"><img src="../image/add_test.jpg" alt="배너"></span></td>
-                                        <td class="tal">건강검진 프로모션</td>
+                                        <td class="tal"><a href="" class="bold_btn">건강검진 프로모션</a></td>
                                         <td>홈</td>
                                         <td class="ad_period">2025.04.01<br>~ 2025.04.30</td>
                                         <td><span class="ad_badge ongoing">진행중</span></td>
-                                        <td><a class="more_btn" href="ad_view.html"><img src="../image/dot3.png" alt="관리"></a></td>
+                                        <td><a class="more_btn" href=""><img src="../image/dot3.png" alt="관리"></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -157,8 +157,88 @@
 
                 </div>
             </div>
+            
+            <!-- 광고 등록 모달 // s -->
+            <div class="modal_wrap" id="reg_ad">
+                <div class="modal reg_modal">
+                    <button class="modal_close" onclick="document.getElementById('reg_ad').style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 4L12 12" stroke="#0A0A0A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <h3 class="adm_title">기본 정보</h3>
+                    </div>
+                    <div>
+                        <p class="reg_label">배너 이미지 <span class="req">*</span></p>
+                        <div class="ad_modal_thumb">
+                             <img src="image/thumb_none.png">
+                        </div>
+                        <div class="ad_modal_img_row">
+                            <label class="btn_line reg_img_btn" for="ad_modal_file">
+                                <img src="image/save_Icon.svg" alt="">
+                                이미지 선택
+                            </label>
+                            <input type="file" id="ad_modal_file" accept="image/jpeg,image/png" style="display:none;">
+                            <p class="reg_guide">JPG, PNG 파일<br>배너: 1200×300px</p>
+                        </div>
+                    </div>
+                    <div class="reg_row">
+                        <div class="reg_field">
+                            <label>광고 제목 <span class="req">*</span></label>
+                            <input type="text" class="wfull gray" placeholder="광고 제목을 입력하세요">
+                        </div>
+                        <div class="reg_field">
+                            <label>노출 위치 <span class="req">*</span></label>
+                            <select class="wfull gray">
+                                <option value="" disabled selected>위치 선택</option>
+                                <option>홈</option>
+                                <option>건강 콘텐츠</option>
+                                <option>탑업</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="reg_label">링크 URL <span class="req">*</span></p>
+                        <input type="text" class="wfull gray" placeholder="https://example.com">
+                    </div>
+                    <div class="reg_row">
+                        <div class="reg_field">
+                            <label>시작일 <span class="req">*</span></label>
+                            <input type="date" class="wfull gray">
+                        </div>
+                        <div class="reg_field">
+                            <label>종료일 <span class="req">*</span></label>
+                            <input type="date" class="wfull gray">
+                        </div>
+                    </div>
+                    <div class="modal_btn_wrap">
+                        <button class="btn_line" onclick="document.getElementById('reg_ad').style.display='none'">취소</button>
+                        <button class="btn_blue">등록하기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 광고 등록 모달 // e -->
         </div>
     </div>
+
+
+
+
+    <script>
+        function modalOpen(id) {
+            document.querySelectorAll('.modal_wrap').forEach(m => m.style.display = 'none');
+            document.getElementById(id).style.display = 'flex';
+        }
+        document.querySelectorAll('.modal_wrap').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target.classList.contains('modal_wrap')) {
+                    this.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 
